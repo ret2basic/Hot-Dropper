@@ -29,11 +29,11 @@ This Dropper is not weaponized. The payload is just a MessageBox shellcode.
 
 The target AV is **Windows Defender**. Upload `implant.exe` to VirusTotal and we see that this dropper successfully bypassed Windows Defender:
 
-![virustotal_windows.png]
+![VirusTotal Windows](virustotal_windows.png)
 
 But it is far from perfect:
 
-![virustotal_score.png]
+![VirusTotal score](virustotal_score.png)
 
 This is fine. More AV evasion techniques will be taught in the MalDev Intermediate course.
 
