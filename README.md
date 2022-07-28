@@ -21,6 +21,22 @@ In each folder, there is a file named `compile.bat`. It is used to compile `impl
 
 Double click `implant.exe` to trigger the payload.
 
+# Payload choice
+
+This Dropper is not weaponized. The payload is just a MessageBox shellcode.
+
+# AV Choice
+
+The target AV is **Windows Defender**. Upload `implant.exe` to VirusTotal and we see that this dropper successfully bypassed Windows Defender:
+
+![virustotal_windows.png]
+
+But it is far from perfect:
+
+![virustotal_score.png]
+
+This is fine. More AV evasion techniques will be taught in the MalDev Intermediate course.
+
 # Design
 
 From a high-level point of view, our dropper (the main function) does the following things in order:
@@ -35,10 +51,6 @@ From a high-level point of view, our dropper (the main function) does the follow
     - This is just a single function call `AESDecrypt()`.
 - **Step 5: Inject the payload to explorer.exe.**
     - This behavior will be flagged by Windows Defender, so we have to implement AV evasion features.
-
-# Payload choice
-
-This Dropper is not weaponized. The payload is just a MessageBox shellcode.
 
 # AES Encryption
 
