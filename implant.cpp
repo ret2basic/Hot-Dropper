@@ -1,6 +1,6 @@
 /*
 
-Stealthy Dropper
+Hot Dropper
 
     Features:
 
