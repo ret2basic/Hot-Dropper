@@ -167,7 +167,7 @@ Recall the following code we wrote in "function obfuscation" section:
 pVirtualAllocEx = GetProcAddress(GetModuleHandle("kernel32.dll"), "VirtualAllocEx");
 ```
 
-If we write code like this, the string "VirtualAllocEx" will present in the executable after compilation. This behavior can be flagged by AV easily since AV does static analysis on executables.
+If we write code like this, the string "VirtualAllocEx" will appear in the executable after compilation. This behavior can be flagged by AV easily since AV does static analysis on executables.
 
 To bypass it, we obfuscate the string "VirtualAllocEx" with AES. Basically we are going to AES-encrypt this string with `aesencrypt.py`, copy and paste the output to `implant.cpp` and implement AES-decrypt functionalities in `implant.cpp`.
 
