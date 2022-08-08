@@ -13,12 +13,6 @@ Drop it like it's hot.
 
 # How to Use
 
-In each folder, there is a file named `compile.bat`. It is used to compile `implant.cpp`:
-
-```powershell
-.\compile.bat
-```
-
 Double click `implant.exe` to trigger the payload.
 
 # Payload choice
